@@ -19,10 +19,13 @@ public class Main {
       }
       int k = z.nextInt();
       
+      // Step 1: Reverse the first k elements
       reverse(arr, 0, k-1);
       
+      // Step 2: Reverse the remaining n-k elements
       reverse(arr, k, n-1);
       
+      // Step 3: Reverse the entire array
       reverse(arr, 0, n-1);
       
       System.out.print(Arrays.toString(arr));
